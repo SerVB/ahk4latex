@@ -59,6 +59,9 @@ letterBindings = (
 sequenceBindings = (
     ("=>", r"\Rightarrow"),
     ("->", r"\rightarrow"),
+    ("-->", r"\longrightarrow"),
+    ("<-", r"\leftarrow"),
+    ("<--", r"\longleftarrow"),
 
     ("00", r"\infty"),
 
@@ -66,6 +69,8 @@ sequenceBindings = (
     (">=", r"\geqslant"),
 
     ("||", r"\left|\right|"),
+
+    ("\l", r"\limits"),
 )
 
 
