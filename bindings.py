@@ -75,7 +75,7 @@ def checkLetterBindings():
 
     for letterBinding in letterBindings:
         for letter in letterBinding[:-1]:
-            assert letter not in letters
+            assert letter not in letters, "Second binding for %s" % letter
 
             letters.add(letter)
 
