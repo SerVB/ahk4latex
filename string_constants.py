@@ -28,7 +28,12 @@ return
 #If mathMode  ; ------ Keys in math mode ------"""
 
 
-FILE_END = r"""#If  ; ------ End keys in math mode ------"""
+FILE_MIDDLE = r"""#If  ; ------ End keys in math mode ------
+
+; ------ Sequences ------"""
+
+
+FILE_END = r"""; ------ End sequences ------"""
 
 
 LETTER_BINDING = r"""
@@ -42,6 +47,5 @@ return"""
 SEQUENCE_BINDING = r"""
 ; --- {source} to "{to}" ---
 ::{sourceAhk}::
-mathMode = false
 SendRaw {to}
 return"""

@@ -2,7 +2,7 @@
 
 import os
 
-from string_constants import FILE_BEGIN, FILE_END, LETTER_BINDING, SEQUENCE_BINDING
+from string_constants import FILE_BEGIN, FILE_MIDDLE, FILE_END, LETTER_BINDING, SEQUENCE_BINDING
 from bindings import letterBindings, sequenceBindings
 
 
@@ -30,6 +30,8 @@ for letterBinding in letterBindings:
             sourceAhk = source
 
         print(LETTER_BINDING.format(source=source, sourceAhk=sourceAhk, to=to), file=outputFile)
+
+print(FILE_MIDDLE, file=outputFile)
 
 for sequenceBinding in sequenceBindings:
     sources = sequenceBinding[:-1]
